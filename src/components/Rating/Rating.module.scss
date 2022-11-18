@@ -3,4 +3,87 @@
 .info {
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
   border-radius: 30px;
+  padding-left: 32px;
+  padding-right: 40px;
+  padding-top: 32px;
+  padding-block: 32px;
+  max-width: 412px;
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: #ffffff;
+    margin-bottom: 7px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #969fad;
+    margin-bottom: 24px;
+  }
+  .button {
+    background: #fc7614;
+    border-radius: 22.5px;
+    font-family: 'Overpass';
+    padding: 15px 0;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    transition: 0.2s ease-in-out;
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    text-transform: uppercase;
+    &:hover {
+      background: #ffffff;
+      color: #fc7614;
+    }
+  }
+
+  .circles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    .dot {
+      height: 51px;
+      width: 51px;
+      background: #262e38;
+      border-radius: 50%;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #7c8798;
+      cursor: pointer;
+      &:hover {
+        color: #ffffff;
+        background: #7c8798;
+      }
+      &:focus {
+        background-color: #fc7614;
+        color: #ffffff;
+      }
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
 }
