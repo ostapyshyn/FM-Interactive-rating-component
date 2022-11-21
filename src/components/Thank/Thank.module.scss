@@ -6,20 +6,41 @@
   padding-left: 32px;
   padding-right: 40px;
   padding-block: 34px;
+  padding-top: 45px;
   max-width: 412px;
+  .select {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #fc7614;
+    background: #262e38;
+    border-radius: 22.5px;
+    max-width: 195px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding-block: 4px;
+    padding-inline: 20px;
+  }
+  svg {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
   h1 {
     font-weight: 700;
     font-size: 28px;
     line-height: 35px;
     color: #ffffff;
     margin-bottom: 7px;
+    text-align: center;
   }
   p {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #969fad;
-    margin-bottom: 25px;
+    margin-bottom: 11px;
+    text-align: center;
   }
 
   .circles {
