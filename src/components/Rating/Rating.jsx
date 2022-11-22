@@ -32,7 +32,7 @@ const Rating = () => {
           </button>
         </section>
       )}
-      {result && <Thank />}
+      {result && <Thank rate={rating} />}
     </>
   );
 };

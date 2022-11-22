@@ -7,12 +7,22 @@
   padding-right: 40px;
   padding-block: 34px;
   max-width: 412px;
+  @include mq(500px) {
+    padding-top: 24px;
+    padding-inline: 24px;
+    padding-bottom: 31px;
+  }
   h1 {
     font-weight: 700;
     font-size: 28px;
     line-height: 35px;
     color: #ffffff;
     margin-bottom: 7px;
+    @include mq(500px) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
   }
   p {
     font-weight: 400;
@@ -20,12 +30,20 @@
     line-height: 24px;
     color: #969fad;
     margin-bottom: 25px;
+    @include mq(500px) {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 24px;
+    }
   }
 
   .circles {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+    @include mq(500px) {
+      margin-bottom: 24px;
+    }
   }
   .dot,
   .star {
@@ -55,10 +73,17 @@
     &:active {
       transform: scale(0.98);
     }
+    @include mq(500px) {
+      height: 42px;
+      width: 42px;
+    }
   }
   .star {
     margin-bottom: 30px;
     pointer-events: none;
+    @include mq(500px) {
+      margin-bottom: 16px;
+    }
   }
 
   .button {

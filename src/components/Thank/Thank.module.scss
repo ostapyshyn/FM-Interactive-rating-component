@@ -8,6 +8,11 @@
   padding-block: 34px;
   padding-top: 45px;
   max-width: 412px;
+  @include mq(500px) {
+    padding-top: 32px;
+    padding-bottom: 34px;
+    padding-inline: 24px;
+  }
   .select {
     font-weight: 400;
     font-size: 15px;
@@ -21,26 +26,41 @@
     margin-bottom: 32px;
     padding-block: 4px;
     padding-inline: 20px;
+    @include mq(500px) {
+      margin-bottom: 24px;
+    }
   }
   svg {
     margin: 0 auto;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
+    @include mq(500px) {
+      margin-bottom: 24px;
+    }
   }
   h1 {
     font-weight: 700;
     font-size: 28px;
     line-height: 35px;
     color: #ffffff;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     text-align: center;
+    @include mq(500px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
   p {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #969fad;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
     text-align: center;
+    @include mq(500px) {
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   .circles {

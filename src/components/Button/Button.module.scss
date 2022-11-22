@@ -1,3 +1,4 @@
+@import '../../index.scss';
 .dot {
   height: 51px;
   width: 51px;
@@ -24,5 +25,9 @@
   }
   &:active {
     transform: scale(0.98);
+  }
+  @include mq(500px) {
+    height: 42px;
+    width: 42px;
   }
 }
