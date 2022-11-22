@@ -9,7 +9,7 @@ const Rating = () => {
   const [result, setResult] = useState(false);
 
   return (
-    <>
+    <main>
       {!result && (
         <section className={styles.info}>
           <button className={styles.star}>
@@ -33,7 +33,7 @@ const Rating = () => {
         </section>
       )}
       {result && <Thank rate={rating} />}
-    </>
+    </main>
   );
 };
 
