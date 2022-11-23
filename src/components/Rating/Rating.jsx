@@ -1,12 +1,30 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 import styles from './Rating.module.scss';
 import { ReactComponent as Star } from '../assets/icon-star.svg';
 import Button from '../Button';
 import Thank from '../Thank';
 
 const Rating = () => {
-  const [rating, setRating] = useState(3);
+  const [rating, setRating] = useState(null);
   const [result, setResult] = useState(false);
+
+  function onClickSubmit() {
+    if (!rating) {
+      toast.error('Please choose your rating', {
+        position: 'top-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+      });
+    } else {
+      setResult(true);
+    }
+  }
 
   return (
     <main>
@@ -27,7 +45,7 @@ const Rating = () => {
             <Button rating={4} onClickRating={(id) => setRating(id)} />
             <Button rating={5} onClickRating={(id) => setRating(id)} />
           </div>
-          <button className={styles.button} onClick={() => setResult(true)}>
+          <button className={styles.button} onClick={onClickSubmit}>
             SUBMIT
           </button>
         </section>
