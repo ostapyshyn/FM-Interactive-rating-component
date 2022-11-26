@@ -86,6 +86,9 @@
     }
   }
 
+  .back {
+  }
+
   .button {
     background: #fc7614;
     border-radius: 22.5px;
@@ -114,5 +117,35 @@
       background: #ffffff;
       color: #fc7614;
     }
+  }
+}
+
+.button {
+  background: #fc7614;
+  border-radius: 22.5px;
+  font-family: 'Overpass';
+  padding: 15px 0;
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 11px;
+  transition: 0.2s ease-in-out;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  text-transform: uppercase;
+  &:hover {
+    background: #ffffff;
+    color: #fc7614;
   }
 }

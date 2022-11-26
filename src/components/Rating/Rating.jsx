@@ -51,6 +51,7 @@ const Rating = () => {
         </section>
       )}
       {result && <Thank rate={rating} />}
+      {result && <button className={styles.button}>Back</button>}
     </main>
   );
 };
