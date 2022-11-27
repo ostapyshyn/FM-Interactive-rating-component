@@ -120,12 +120,15 @@
   }
 }
 
-.button {
+.back {
+  position: absolute;
   background: #fc7614;
   border-radius: 22.5px;
   font-family: 'Overpass';
   padding: 15px 0;
-  width: 100%;
+  width: 100px;
+  left: 20px;
+  top: 20px;
 
   font-weight: 700;
   font-size: 15px;

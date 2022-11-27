@@ -9,6 +9,11 @@ const Rating = () => {
   const [rating, setRating] = useState(null);
   const [result, setResult] = useState(false);
 
+  function onClickBack() {
+    setResult(false);
+    setRating(null);
+  }
+
   function onClickSubmit() {
     if (!rating) {
       toast.error('Please choose your rating', {
@@ -51,7 +56,11 @@ const Rating = () => {
         </section>
       )}
       {result && <Thank rate={rating} />}
-      {result && <button className={styles.button}>Back</button>}
+      {result && (
+        <button className={styles.back} onClick={onClickBack}>
+          Back
+        </button>
+      )}
     </main>
   );
 };
